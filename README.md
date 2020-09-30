@@ -9,7 +9,7 @@ C'est à dire une structure capable de stocker des nombres.
 
 ## Specifications
 
-* Vous devez implémenter les fonctions de la classe FibonnaciHeap donné dans le fichier fibonnaci_heap.py mais êtes libre de rajouter autant de fonction que vous le souhaitez.
+* Vous devez implémenter les fonctions de la classe FibonacciHeap donné dans le fichier fibonnaci_heap.py mais êtes libre de rajouter autant de fonction que vous le souhaitez.
 * La note sera divisé en 5 : une notation intermédiaire par fonction
 * Vous pouvez utilisez des fonctions de la library standard de Python (`range`, `enumerate`, `len`, ...) sauf si elles nécessitent un `import` (`random`, `combinations`, ...). https://docs.python.org/3/reference/import.html
 * Vous devez faire la gestion d'erreur de votre classe. Si une `str` est donné en paramètre d'une fonction qui attend un `int`, vous devez `raise` une exception. https://docs.python.org/3/tutorial/errors.html

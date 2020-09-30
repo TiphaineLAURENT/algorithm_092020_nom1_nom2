@@ -36,7 +36,7 @@ class Heap(object):
         pass
 
 
-class FibonnaciHeap(Heap):
+class FibonacciHeap(Heap):
     """
     Une fibonnaci heap est un arbre permettant de stocker et trier des donnés efficacement
 
