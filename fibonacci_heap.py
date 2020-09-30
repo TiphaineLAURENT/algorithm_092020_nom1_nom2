@@ -64,12 +64,6 @@ class FibonacciHeap(Heap):
         """
         pass
 
-    def decrease_key(self, current_value: int, new_value :int) -> None:
-        """
-        Modify une valeur dans l'arbre
-        """
-        pass
-
     def merge(self, fibonnaci_heap: Heap) -> None:
         """
         Fusionne deux arbres
