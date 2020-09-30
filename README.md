@@ -2,12 +2,19 @@
 
 Modèle du projet du cours d'algorithmes
 
-# Description
+## Description
 
 Vous devez créer une Fibonnaci heap.
 C'est à dire une structure capable de stocker des nombres.
 
-# Documentation
+## Specifications
+
+* Vous devez respecter le modèle de classe donné dans le fichier fibonnaci_heap.py mais être libre de rajouter autant de fonction que vous le souhaitez.
+* La note sera divisé en 5 : une notation intermédiaire par fonction
+* Vous pouvez utilisez des fonctions de la library standard de Python (`range`, `enumerate`, `len`, ...) sauf si elles nécessitent un `import` (`random`, `combinations`, ...)
+* Vous devez faire la gestion d'erreur de votre classe. Si une `str` est donné en paramètre d'une fonction qui attend un `int`, vous devez `raise` une exception.
+
+## Documentation
 
 https://en.wikipedia.org/wiki/Heap_(data_structure)
 
