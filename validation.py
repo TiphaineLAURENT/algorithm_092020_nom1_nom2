@@ -51,7 +51,7 @@ with open("urls.csv", "r") as f:
                 log.write(f"Insert successful\n")
 
             try:
-                minimum = heap.find_minimum()
+                minimum = heap.find_min()
             except Exception as e:
                 log.write(f"Error while finding minimum with good values inserted in the heap : {e}\n")
                 continue
@@ -68,7 +68,7 @@ with open("urls.csv", "r") as f:
             except Exception as e:
                 log.write(f"Error while merging two identical heap : {e}\n")
             else:
-                minimum = heap.find_minimum()
+                minimum = heap.find_min()
                 if minimum != 0:
                     log.write(f"Invalid : Found minimum {minimum} but was looking for 0\n")
                 else:

@@ -42,3 +42,11 @@ et en français : https://fr.wikipedia.org/wiki/Tas_de_Fibonacci#Implémentation
   * 1 point de gestion d'erreur
   * 1 point de respect de la norme
 * 
+
+# Attention !
+
+Verifiez bien :
+* le nom du fichier : fibonacci_heap.py
+* le nom de la classe : FibonacciHeap
+* que votre code est éxécutable
+* que vous avez commit et push les dernières modifications
