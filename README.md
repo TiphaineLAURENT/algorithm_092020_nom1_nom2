@@ -46,6 +46,7 @@ et en français : https://fr.wikipedia.org/wiki/Tas_de_Fibonacci#Implémentation
 # Attention !
 
 Verifiez bien :
+* que le repository est en Public (Settings (paramètres) -> Options -> Change repository visibility (changer la visibilité) -> Public
 * le nom du fichier : fibonacci_heap.py
 * le nom de la classe : FibonacciHeap
 * que votre code est éxécutable
