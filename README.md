@@ -41,7 +41,7 @@ et en français : https://fr.wikipedia.org/wiki/Tas_de_Fibonacci#Implémentation
 * 2 points sur la qualité du code
   * 1 point de gestion d'erreur
   * 1 point de respect de la norme
-* 
+* 1 pour pour la non triche
 
 # Attention !
 
