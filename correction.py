@@ -175,8 +175,9 @@ class FibonacciHeap(object):
         self.delete_min()
 
 
-heap = FibonacciHeap()
-heap.insert(5)
+heap = FibonacciHeap() # Create heap
+
+heap.insert(5) # Insert value
 heap.insert(1)
 heap.insert(10)
 heap.insert(0)
@@ -189,13 +190,16 @@ heap.insert(2)
 heap.insert(84)
 heap.insert(50)
 
-print(heap.find_min())
+print(heap.find_min()) # find min
 
 from copy import deepcopy
 
-heap.merge(deepcopy(heap))
+heap2 = deepcopy(heap)
+heap.merge(heap2) # Fusion
 
-print(heap.find_min())
+print(heap.find_min()) # Trouver le minimum fusionner
 
-while (node := heap.delete_min()) is not None:
+print(heap.delete_min()) # Prendre la valeur minimum
+
+while (node := heap.delete_min()) is not None: # Prendre jusqu'au dernier
     print(node)
