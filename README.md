@@ -23,3 +23,22 @@ https://en.wikipedia.org/wiki/Fibonacci_heap
 
 L'implémentation est décrite en anglais : https://en.wikipedia.org/wiki/Fibonacci_heap#Implementation_of_operations
 et en français : https://fr.wikipedia.org/wiki/Tas_de_Fibonacci#Implémentation_des_opérations
+
+## Notation
+
+/ 10
+
+* 1 point pour l'utilisation du code
+  * Créer le dépôt
+  * Mettre le dépôt public
+  * Avoir le bon fichier
+  * Avoir la bonne classe avec les bonnes fonctions
+* 6 points sur les fonctions:
+  * 1 point pour l'insertion
+  * 1 point sur trouver le minimum
+  * 1 point sur la fusion
+  * 3 points sur supprimer le minimum
+* 2 points sur la qualité du code
+  * 1 point de gestion d'erreur
+  * 1 point de respect de la norme
+* 
