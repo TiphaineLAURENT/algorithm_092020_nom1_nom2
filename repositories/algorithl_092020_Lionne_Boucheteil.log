@@ -1,0 +1,5 @@
+Create heap successful
+Insert successful
+Find minimum successful
+Error while merging two identical heap : 'NoneType' object has no attribute 'right'
+Error while removing minimum : Expected 0 got None

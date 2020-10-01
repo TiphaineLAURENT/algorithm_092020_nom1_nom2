@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File ".\execute_tests.py", line 84, in <module>
+    test()
+  File ".\execute_tests.py", line 14, in test
+    heap = FibonacciHeap()
+TypeError: __init__() missing 1 required positional argument: 'tree'

@@ -98,18 +98,27 @@ class FibonacciHeap(object):
 
     def consolidate(self) -> None:
         unsorted_nodes = [None] * self.num_nodes
+
+        #[degree0, degree1, degree2...]
+
         root = self.min
         counter = self.num_trees
         while counter:
             temp_root = root
             root = root.right
             temp_root_degree = temp_root.degree
-            while unsorted_nodes[temp_root_degree]:
+            while unsorted_nodes[temp_root_degree]: # Regarde est-ce qu'il existe une branche de la même taille
                 node_with_similar_degree = unsorted_nodes[temp_root_degree]
-                if temp_root.key > node_with_similar_degree.key:
+                if temp_root.key > node_with_similar_degree.key: # Si la branche similaire a une valeur superieur, la branche similaire va en dessous
+                    # Echanger les valeurs de a et b
+                    # Pour a == 1 et b == 2
+                    # temp = a == 1
+                    # a = b == 2
+                    # b = temp == 1
+                    # a == 2 et b == 1
                     temp_root, node_with_similar_degree = node_with_similar_degree, temp_root
                 self.link(node_with_similar_degree, temp_root)
-                unsorted_nodes[temp_root_degree] = None
+                unsorted_nodes[temp_root_degree] = None # On enlève la branche similaire de la liste des branches similaire
                 temp_root_degree += 1
             unsorted_nodes[temp_root_degree] = temp_root
             counter -= 1
@@ -175,9 +184,9 @@ class FibonacciHeap(object):
         self.delete_min()
 
 
-heap = FibonacciHeap() # Create heap
+heap = FibonacciHeap() # Create heap == 1
 
-heap.insert(5) # Insert value
+heap.insert(5) # Insert value == 1
 heap.insert(1)
 heap.insert(10)
 heap.insert(0)
@@ -190,16 +199,16 @@ heap.insert(2)
 heap.insert(84)
 heap.insert(50)
 
-print(heap.find_min()) # find min
+print(heap.find_min()) # find min == 1
 
 from copy import deepcopy
 
 heap2 = deepcopy(heap)
-heap.merge(heap2) # Fusion
+heap.merge(heap2) # Fusion == 1
 
 print(heap.find_min()) # Trouver le minimum fusionner
 
-print(heap.delete_min()) # Prendre la valeur minimum
+print(heap.delete_min()) # Prendre la valeur minimum == 3
 
-while (node := heap.delete_min()) is not None: # Prendre jusqu'au dernier
+while (node := heap.delete_min()) is not None: # Prendre jusqu'au dernier == gestion d'erreur
     print(node)
