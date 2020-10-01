@@ -3,6 +3,9 @@ class Heap(object):
     Une heap est une structure de données sous forme d'arbre.
 
     https://en.wikipedia.org/wiki/Heap_(data_structure)
+
+    CETTE CLASSE JUSTE POUR L'AUTOCOMPLETION DE VOTRE EDITEUR
+    NE VOUS EN OCCUPER PAS
     """
 
     def insert(self, value: int) -> None:
