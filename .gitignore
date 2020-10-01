@@ -1,4 +1,5 @@
-repositories/
+repositories/*
+!repositories/*.log
 correction.py
 test.py
 *.pyc

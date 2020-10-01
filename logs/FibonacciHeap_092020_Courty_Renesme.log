@@ -1,5 +1,0 @@
-Create heap successful
-Insert successful
-Invalid : Found minimum None but was looking for 0
-Invalid : Found minimum None but was looking for 0 after merge
-Error while removing minimum : Expected 0 got None
