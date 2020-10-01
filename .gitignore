@@ -1,6 +1,5 @@
 repositories/**/*.py
 repositories/**/*.md
-correction.py
 *.pyc
 __pycache__/
 test.py

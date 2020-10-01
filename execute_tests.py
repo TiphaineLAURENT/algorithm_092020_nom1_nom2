@@ -6,7 +6,7 @@ from copy import deepcopy
 def test():
     with open(f"output.log", "w") as log:
         try:
-            from fibonacci_heap import FibonacciHeap
+            from correction import FibonacciHeap
         except Exception as e:
             log.write(f"Error : {e}")
 
