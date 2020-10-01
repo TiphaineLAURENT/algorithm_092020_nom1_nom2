@@ -17,12 +17,16 @@ with open("urls.csv", "r") as f:
 
             try:
                 os.chdir(repository_name)
+            except FileNotFoundError as e:
+                log.write(f"Error : {repository_name} repository either doesn't exist or does not have public rights\n")
+                continue
+
+            try:
                 module = importlib.import_module("fibonacci_heap")
                 os.chdir(f"{base_dir}\\logs")
             except ModuleNotFoundError as e:
-                print(f"{os.getcwd()} Error : {repository_name} repository either doesn't exist or does not have public rights\n")
                 os.chdir(f"{base_dir}\\logs")
-                log.write(f"Error : {repository_name} repository either doesn't exist or does not have public rights\n")
+                log.write(f"Error : fibonacci_heap.py does not exist\n")
                 continue
 
             try:
@@ -70,9 +74,21 @@ with open("urls.csv", "r") as f:
             else:
                 minimum = heap.find_min()
                 if minimum != 0:
-                    log.write(f"Invalid : Found minimum {minimum} but was looking for 0\n")
+                    log.write(f"Invalid : Found minimum {minimum} but was looking for 0 after merge\n")
                 else:
                     log.write(f"Merge minimum successful\n")
+
+            try:
+                node = heap.delete_min()
+            except Exception as e:
+                log.write(f"Error while removing min element : {e}\n")
+                continue
+            else:
+                if node == 0:
+                    log.write("Delete minimum successful\n")
+                else:
+                    log.write(f"Error while removing minimum : Expected 0 got {node}")
+                    continue
 
             try:
                 while (node := heap.delete_min()) is not None:
