@@ -1,0 +1,5 @@
+Create heap successful
+Insert successful
+Find minimum successful
+Merge minimum successful
+Error while removing min element : delete_min() missing 1 required positional argument: 'value'

@@ -1,0 +1,6 @@
+Create heap successful
+Insert successful
+Find minimum successful
+Error while merging two identical heap : merge() missing 1 required positional argument: 'heap_2'
+Delete minimum successful
+Delete minimum successful

@@ -1,0 +1,3 @@
+Error : expected an indented block (fibonacci_heap.py, line 18)Error : Creation of the heap failed
+Error while inserting good values in the heap: local variable 'heap' referenced before assignment
+Error while finding minimum with good values inserted in the heap : local variable 'heap' referenced before assignment

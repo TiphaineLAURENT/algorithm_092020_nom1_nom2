@@ -1,0 +1,5 @@
+Create heap successful
+Error while inserting good values in the heap: Incorrect type value, please enter an integer
+Invalid : Found minimum None but was looking for 0
+Error while merging two identical heap : Incorrect type value, please enter an Heap object
+Error while removing min element : 'FibonacciHeap' object has no attribute 'value'

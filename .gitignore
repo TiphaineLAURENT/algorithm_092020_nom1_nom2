@@ -1,6 +1,6 @@
-repositories/*
-!repositories/*.log
+repositories/**/*.py
+repositories/**/*.md
 correction.py
-test.py
 *.pyc
 __pycache__/
+test.py

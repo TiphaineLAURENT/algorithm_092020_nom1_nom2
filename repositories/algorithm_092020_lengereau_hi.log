@@ -1,0 +1,3 @@
+Error : unindent does not match any outer indentation level (fibonacci_heap.py, line 43)Error : Creation of the heap failed
+Error while inserting good values in the heap: local variable 'heap' referenced before assignment
+Error while finding minimum with good values inserted in the heap : local variable 'heap' referenced before assignment
